@@ -47,6 +47,6 @@ Make sure the model file is placed in the model/ directory:
 
 📬 Contact
 
-Built by Adityo Pangestu · adityo@example.com (replace with actual email)
+Built by Adityo Pangestu · adityopangestu01@gmail.com
 
 Feel free to fork this project and enhance it for multi-label classification, topic analysis, or emotion detection!
