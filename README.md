@@ -60,7 +60,6 @@ The model was trained using a custom implementation of the DocumentSentimentData
 
 - IndoNLU — for Indonesian NLP datasets and benchmarks
 - HuggingFace — for providing model architectures and tokenizer support
-- Adityo Pangestu — for training, optimizing, and deploying the model
 
 📬 Contact
 
