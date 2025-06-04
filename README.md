@@ -39,6 +39,11 @@ Output:
 - Git LFS — to store large model weights (>500MB)
 - Streamlit — for quick demo deployment (optional)
 
+📺 Try the Web App
+
+Want to see the model in action?  
+👉 Access the live UI here: https://sentiment-analysis-indonlu.streamlit.app/
+
 📁 Model File
 
 Make sure the trained model is stored in the following path:
@@ -58,8 +63,9 @@ The model was trained using a custom implementation of the DocumentSentimentData
 
 📚 Acknowledgements
 
-- IndoNLU — for Indonesian NLP datasets and benchmarks
-- HuggingFace — for providing model architectures and tokenizer support
+- IndoNLU — for Indonesian NLP datasets and benchmarks  
+- HuggingFace — for providing model architectures and tokenizer support  
+- Adityo Pangestu — for training, optimizing, and deploying the model  
 
 📬 Contact
 
