@@ -1,52 +1,68 @@
-# 🇮🇩 IndoBERT Sentiment Classification App
+# 🇮🇩 IndoBERT Sentiment Classifier
 
-A simple and interactive Streamlit web app to classify Indonesian text sentiment (positive, negative, or neutral) using IndoBERT, a pre-trained BERT model fine-tuned for sentiment analysis.
+An accurate and efficient sentiment classification system for Indonesian text, powered by IndoBERT. This project demonstrates how a fine-tuned transformer model can effectively classify sentiment in real-world Indonesian documents.
 
-✨ Demo
+🧠 Model Highlights
 
-Classify your Indonesian sentence with one click! Paste your text and get a sentiment prediction with confidence score.
+- Based on indobenchmark/indobert-base-p1 — a pre-trained BERT model for the Indonesian language
+- Fine-tuned on document-level sentiment dataset
+- Supports 3 sentiment classes:
+  - Negative
+  - Neutral
+  - Positive
+- Achieves strong performance on test data with high precision and recall
+- Inference-ready and optimized for deployment
 
-🧠 Model
+📌 Use Case
 
-This app uses indobenchmark/indobert-base-p1 fine-tuned for document-level sentiment classification with 3 sentiment classes:
+This model is designed for Indonesian-language applications such as:
 
-- Negative
-- Neutral
-- Positive
+- Social media monitoring
+- Customer feedback analysis
+- Product review classification
+- Public opinion mining
 
-🏗️ Built With
+🔍 Example
 
-- Streamlit – for web UI  
-- PyTorch – for deep learning  
-- HuggingFace Transformers – for IndoBERT  
-- Git LFS – to store the model (>500MB)
+Input:
 
-📝 Example Usage
+> "Merasa kagum dengan toko ini tapi berubah menjadi kecewa setelah transaksi"
 
-Try inputting:
+Output:
 
-> "Saya sangat senang dengan pelayanan toko ini!"
+🧠 Prediction: negative (93.2%)
 
-The model will output:
+⚙️ Tech Stack
 
-🧠 Prediksi: positive (96.75%)
+- PyTorch — deep learning framework
+- HuggingFace Transformers — for loading and managing the IndoBERT model
+- Git LFS — to store large model weights (>500MB)
+- Streamlit — for quick demo deployment (optional)
 
 📁 Model File
 
-Make sure the model file is placed in the model/ directory:
+Make sure the trained model is stored in the following path:
 
 - model/best_model.pt
 
-⚠️ Note: This file is tracked using Git LFS.
+⚠️ Note: The model file is tracked using Git LFS due to its size.
 
-💡 Acknowledgements
+🧪 Training
 
-- IndoNLU Benchmark – for Indonesian NLP resources  
-- HuggingFace Transformers – model loading  
-- Streamlit – for UI  
+The model was trained using a custom implementation of the DocumentSentimentDataset and DocumentSentimentDataLoader from IndoNLU. Training utilized:
+
+- Adam optimizer
+- Custom metrics calculation
+- GPU acceleration (CUDA)
+- Validation-based evaluation per epoch
+
+📚 Acknowledgements
+
+- IndoNLU — for Indonesian NLP datasets and benchmarks
+- HuggingFace — for providing model architectures and tokenizer support
+- Adityo Pangestu — for training, optimizing, and deploying the model
 
 📬 Contact
 
-Built by Adityo Pangestu · adityopangestu01@gmail.com
-
-Feel free to fork this project and enhance it for multi-label classification, topic analysis, or emotion detection!
+Created by Adityo Pangestu · adityopangestu01@gmail.com  
+Feel free to contribute or extend this project for other NLP tasks such as topic modeling, emotion detection, or intent classification.
